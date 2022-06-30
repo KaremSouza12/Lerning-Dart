@@ -25,7 +25,15 @@ Editor de código e IDE usada  para progamar na linguagem **Dart**
 Caso utilize o Visual Studio code é necessário instalar
 a extenssão do Dart
 ```
-
-
-
 ![Alt text](https://i.ibb.co/6b018GG/ex.png "Instalando Extenssão")
+
+```
+Caso utilize o Intelij é necessário instalar
+a pluggin do Dart
+```
+![Alt text](https://i.ibb.co/mbWJJ20/Captura-de-tela-2022-06-29-211912.png "Instalando Extenssão")
+
+Rodar programa
+```
+docker run
+```
