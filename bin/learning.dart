@@ -16,7 +16,8 @@ void main() {
     print('Menor de idade');
   }
 
-  for (i = 0; i < 50; i++) {
-    print(i);
+  for (i = 0; i < 10; i++) {
+    print("$i = 5*$i");
+    print(5 * i);
   }
 }
