@@ -16,8 +16,17 @@ void main() {
     print('Menor de idade');
   }
 
-  for (i = 0; i < 10; i++) {
-    print("$i = 5*$i");
-    print(5 * i);
+  for (i = 1; i <= 10; i++) {
+    //percorre de de 1 a 10
+    print("$i = 5*$i"); //faz a multiplicação por 5 para a tabuada de 5
+    print(7 * i);
   }
+  var num = 6;
+  var factorial = 1;
+
+  while (num >= 1) {
+    factorial = factorial * num;
+    num--;
+  }
+  print("The factorial  is ${factorial}");
 }
