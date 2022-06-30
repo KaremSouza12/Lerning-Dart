@@ -1,7 +1,22 @@
-//Estrutura inicial de um programa em dart
-void main() {
-  //função principal onde são executados os trechos de códigos
-  print('Hello world: !'); //imprimi o frase Hello world no terminal
-}
+import 'dart:io';
 
-//Para executar o trecho de código é necessário usar o o comando dart run no terminal
+void main() {
+  print("Informe a idade");
+  String? idade = stdin.readLineSync();
+  int i = 0;
+
+  if (idade != null) {
+    //verifica se a idade digitada é nula
+    i = int.parse(idade); //transforma a String em inteiro
+  }
+  if (i >= 18) {
+    //verifica se a idade digitada é maio que 18
+    print('Já pode Voltar');
+  } else {
+    print('Menor de idade');
+  }
+
+  for (i = 0; i < 50; i++) {
+    print(i);
+  }
+}
