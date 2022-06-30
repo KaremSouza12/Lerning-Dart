@@ -35,5 +35,5 @@ a pluggin do Dart
 
 Rodar programa
 ```
-docker run
+dart run
 ```
