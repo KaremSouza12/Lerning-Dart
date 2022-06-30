@@ -1,7 +1,7 @@
 //Estrutura inicial de um programa em dart
 void main() {
-  //função principal onde são executados os trechos de códigos
-  print('Hello world: !'); //imprimi o frase Hello world no terminal
-}
+  String nome = "Karem";
+  double altura = 1.60;
 
-//Para executar o trecho de código é necessário usar o o comando dart run no terminal
+  print("Me chamo $nome tenho $altura de altura");
+}
