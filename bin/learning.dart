@@ -1,7 +1,26 @@
 //Estrutura inicial de um programa em dart
 void main() {
-  //função principal onde são executados os trechos de códigos
-  print('Hello world: !'); //imprimi o frase Hello world no terminal
+  printNome("Karem", 29);
+
+  Par(10);
+  dadosPessoa('Teste', telefone: '90909090');
 }
 
-//Para executar o trecho de código é necessário usar o o comando dart run no terminal
+void printNome(String nome, int Idade) {
+  print('Nome: $nome');
+  print('Idade:' + Idade.toString());
+}
+
+void Par(int number) {
+  if (number % 2 == 0) {
+    print("É par");
+  } else {
+    print("É ímpar");
+  }
+}
+
+void dadosPessoa(String nome, {String telefone = ''}) {
+  //Telefone é um parametro opcional
+
+  print('Nome: $nome e Telefon: $telefone');
+}
