@@ -28,5 +28,5 @@ void main() {
     factorial = factorial * num;
     num--;
   }
-  print("The factorial  is ${factorial}");
+  print(" ${factorial}");
 }
