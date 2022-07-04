@@ -1,7 +1,28 @@
-//Estrutura inicial de um programa em dart
 void main() {
-  //função principal onde são executados os trechos de códigos
-  print('Hello world: !'); //imprimi o frase Hello world no terminal
+  Pessoa pessoa = Pessoa('Karem', 29, '92984104725');
+
+  print(pessoa.idade);
 }
 
-//Para executar o trecho de código é necessário usar o o comando dart run no terminal
+class Pessoa {
+  //Propiedades da Classe
+  String nome = '';
+  int _idade = 0;
+  String telefone = '';
+
+  set idade(int idade) {
+    _idade = idade;
+  }
+
+  int get idade {
+    return _idade;
+  }
+
+  //Método da Classe
+  Pessoa(this.nome, int parametroIdade, this.telefone) {
+    idade = parametroIdade;
+  }
+  void apresenta() {
+    print('Meu nome é $nome eu tenho $idade e meu telefone é $telefone');
+  }
+}
