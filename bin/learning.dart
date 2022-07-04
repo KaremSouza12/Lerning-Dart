@@ -8,6 +8,8 @@ void main() {
   Filho f = Filho('Carlos', 12, 'Mendonça Furtado');
 
   f.apresenta();
+  print(Mundo.gravidade);
+  Mundo.duplicarGravidade();
 }
 
 class Pessoa {
@@ -41,5 +43,17 @@ class Filho extends Pai {
   @override //sobreescreve o método apresenta para imprimir os informações da classe pai
   void apresenta() {
     print('Meu nome é $nome e minha idade é $idade e estudo na escola $escola');
+  }
+}
+
+class Mundo {
+  static double gravidade =
+      9.81; //satatic permite acessar diretamente a variavel
+
+  Mundo();
+
+  static void duplicarGravidade() {
+    gravidade = gravidade * 2;
+    print(gravidade);
   }
 }
