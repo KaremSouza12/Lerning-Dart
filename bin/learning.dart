@@ -1,7 +1,20 @@
 //Estrutura inicial de um programa em dart
 void main() {
-  //função principal onde são executados os trechos de códigos
-  print('Hello world: !'); //imprimi o frase Hello world no terminal
+  Map<int, String> numeros = Map();
+  numeros[0] = "Um";
+  numeros[1] = "dois";
+  numeros[2] = "três";
+
+  print(numeros);
+
+  Map<String, String> estados = Map();
+  estados['AM'] = "Amazonas";
+  estados['SP'] = "São Paulo";
+  estados['RJ'] = "Rio de Janeiro";
+
+  print(numeros);
+  print(estados.values);
+  print(estados.keys);
 }
 
 //Para executar o trecho de código é necessário usar o o comando dart run no terminal
